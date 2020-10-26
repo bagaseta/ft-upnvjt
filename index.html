@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Kredit Keaktifan dan Tracer Study FT UPNVJT</title>
+        <title>FT UPNVJT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/screen.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
     </head>
 
     <body>
@@ -12,15 +14,67 @@
         <div class="container">
         <!--Judul Web-->
             <header>
-                <h1 class="small-font">Kredit Keaktifan dan Tracer Study</h1>
-                <p><span class="brand small-font">Fakultas Teknik UPN Jawa Timur</span></p>
+                <h1 class="site-logo">
+					<a href="#">
+						<img src="images/logoupn.png" width="75">
+					</a>
+				</h1>
+                <h1><span class="logo-font">Fakultas Teknik</span></h1>
+                <p><span class="brand logo-font">UPN Jawa Timur</span></p>
         <!--Navigasi-->
                 <nav class="site-nav">
                     <ul class="group">
                         <li><a href=index.html>Home</a></li>
-                        <li><a href=kredit-keaktifan.html>Kredit Keaktifan</a></li>
-                        <li><a href=tracer-study.html>Tracer Study</a></li>
-                        <li><a href=contact-us.html>Contact Us</a></li>
+                        <li><a href="#">Profil</a>
+                            <ul class="hide-small">
+								<li><a href="#">Sejarah FT</a></li>
+								<li><a href="#">Visi dan Misi</a></li>
+								<li><a href="#">Struktur Organisasi</a></li>
+								<li><a href="#">Dosen FT</a></li>
+								<li><a href="#">Tendik</a></li>
+							</ul>
+                        </li>
+                        <li><a href="#">News & Events</a>
+                        </li>
+                        <li><a href="#">Research</a>
+                            <ul class="hide-small">
+                                <li><a href="#">Fokus Riset</a></li>
+                                <li><a href="#">Kolaborasi Riset</a></li>
+                                <li><a href="#">Publikasi Riset</a></li>
+                                <li><a href="#">Riset Mahasiswa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Akademik</a>
+                            <ul class="hide-small">
+                                <li><a href="#">Kalender Akademik</a></li>
+                                <li><a href="#">Program Studi</a></li>
+                                <li><a href="#">Kerjasama Prodi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Kemahasiswaan</a>
+                            <ul class="hide-small">
+                                <li><a href="#">Kredit Keaktifan</a></li>
+                                <li><a href="#">Pra-Lulus</a></li>
+                                <li><a href="#">Prestasi</a></li>
+                                <li><a href="#">Beasiswa</a></li>
+                                <li><a href="#">PKM Mahasiswa</a></li>
+                                <li><a href="#">BEM FT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Alumni</a>
+                            <ul class="hide-small">
+                                <li><a href="#">Tracer Study</a></li>
+                                <li><a href="#">Alumni Berperan Penting</a></li>
+                                <li><a href="#">Mitra Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Layanan</a>
+                        <ul class="hide-small">
+                            <li><a href="#">Peraturan</a></li>
+                            <li><a href="#">Alur Kegiatan</a></li>
+                            <li><a href="#">Evaluasi</a></li>
+                        </li>
+                        </ul>
                     </ul>
                 </nav>
             </header>
@@ -32,45 +86,127 @@
             <div class="container">
                 <div class="main-area">
                     <article>
-                        <header>
-                            <h2>Kredit Keaktifan Mahasiswa</h2>
-                        </header>
-                            <p>Adik-adik Mahasiswa Fakultas Teknik UPN “Veteran” Jawa Timur yang kami banggakan,</p>
-                            <p>Kredit keaktifan mahasiswa ditujukan untuk para mahasiswa sebagai syarat kelulusan. Mahasiswa diwajibkan setidaknya untuk mendapatkan 200-300 point nilai sebagai syarat untuk seminar proposal dan 400-500 point nilai sebagai syarat untuk seminar hasil.</p>
-                            <p>Hormat kami,</p>
-                            <p>Tim Kredit Keaktifan Mahasiswa Fakultas Teknik UPN “Veteran” Jawa Timur</p>
-                        <form action=kredit-keaktifan.html>
-                            <input type="submit" value="Isi Survey Kredit Keaktifan" />
-                        </form>
 
-                        <header>
-                            <h2>Tracer Study Alumni</h2>
-                        </header>
-                            <p>Alumni Fakultas Teknik UPN “Veteran” Jawa Timur yang saya hormati,</p>
-                            <p>Dalam rangka meningkatkan mutu pendidikan dan sebagai sumber informasi ikatan alumni Fakultas Teknik UPN "Veteran" Jawa Timur, kami mengadakan kegiatan tracer study yang ditujukan untuk para lulusan Fakultas Teknik UPN "Veteran" Jawa Timur. Data yang diperoleh dari tracer study ini hanya digunakan untuk internal Fakultas Teknik sebagai bahan evaluasi dan pengembangan akademik di lingkungan Fakultas Teknik. Data yang Saudara/i masukkan bersifat sangat rahasia. Kami hanya akan menggunakannya untuk kepentingan internal akademik di fakultas dan program studi terkait.
-                            Kami mengucapkan terima kasih yang sebesar-besarnya atas partisipasi Saudara/i alumni dalam pengisian tracer study ini.  Semoga kita semua selalu dalam keadaan sehat dan dalam lindungan Tuhan Yang Maha Esa.</p>
-                            <p>Hormat kami,</p>
-                            <p>Tim Tracer Study Fakultas Teknik UPN “Veteran” Jawa Timur</p>
-                        <form action="tracer-study.html">
-                            <input type="submit" value="Isi Survey Tracer Study" />
-                        </form>
+                        <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+
+                            <span class="cycle-prev">&laquo;</span>
+                            <span class="cycle-next">&raquo;</span>
+
+                            <span class="cycle-pager"></span>
+
+                            <div class="slide">
+                                <img src="images/analisalemak.jpg" class="img-size" alt="AnalisaLemak">
+                                <div class="slide-text">
+                                    <h3>Mahasiswa Melakukan Riset Analisa Lemak di Lab. Teknologi Pangan</h3>
+                                    <p>Lemak dan minyak adalah salah satu kelompok yang termasuk pada golongan lipid. Secara umum, lemak diartikan sebagai trigliserida yang dalam kondisi suhu ruang berada dalam keadaan padat. Sedangkan minyak adalah trigliserida yang dalam suhu ruang berbentuk cair<a href="#" class="btn-a">Read More</a> </p>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <img src="images/yudisiums1.jpg" class="img-size" alt="YudisiumS1">
+                                <div class="slide-text">
+                                    <h3>Yudisium Sarjana Strata 1 (S-1) Periode III Gasal 2019-2020</h3>
+                                    <p>Terdiri dari Prodi Teknik Kimia 15, Prodi Teknik Industri 34 ,Prodi Teknologi Pangan 30, Prodi Teknik Sipil 38 dan Prodi Teknik Lingkungan 14<a href="#" class="btn-a">Read More</a> </p>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <img src="images/pbbfakultasteknik.jpg" class="img-size" alt="PBBFakultasTeknik">
+                                <div class="slide-text">
+                                    <h3>Team PBB Fakultas Teknik Tampil Dalam Peringatan Kegiatan Hari Bela Negara 19 Desember 2019</h3>
+                                    <p>Dalam Kesempatan Tersebut Team PBB Fakultas Teknik Diberi Kehormatan Untuk Menjadi Juara 2. Selamat Untuk Team PBB Fakultas Teknik Semoga Jaya Selalu<a href="#" class="btn-a">Read More</a> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-call-outs-container">
+                            <div class="main-call-out">
+                            <img src="images/grafiksertifakasidosenupn.jpg" class="img-size2" alt="PBBFakultasTeknik">
+                              <h4>Grafik Sertifikasi Dosen UPN Veteran Jawa Timur TA 2019/2020</h4>
+                              <p>Grafik Sertifikasi Dosen UPN Veteran Jawa Timur TA 2019/2020. Dosen Ekonomi Pembangunan, Manajemen, Akuntansi, Magister Manajemen, Magister Akuntansi, Agrotekologi, Agribisnis, Magister Agroteknologi, Magister Agribisnis, Teknik Kimia</p>
+                              <a href="#">Read more</a>
+                            </div>
+
+                            <div class="main-call-out">
+                                <img src="images/labprosesproduksiti01.jpg" class="img-size2" alt="PBBFakultasTeknik">
+                                <h5>Kegiatan lab. Proses Produksi Teknik Industri</h5>
+                                <p>Mahasiswa konsentrasi mengikuti praktikum di Lab. Proses Produksi Teknik Industri dimana kebutuhan semakin tenaga kerja semakin  meningkat dan untuk menjawab kebutuhan stage holder di instansi swasta atau di instansi milik pemerintah</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
                     </article>
                 </div>
 
                 <!--Sidebar-->
                 <aside class="sidebar">
-                    <h2>Contact Information</h2>
-                    <p>Alamat Kantor Fakultas Teknik UPNVJT</p>
-                    <p>Email</p>
-                    <p>No. Telp</p>
-                    <nav class="contact-menu">
-                        <ul class="group">
-                            <li class="contact-fb"><a href="#">Facebook</a></li>
-                            <li class="contact-ig"><a href="https://www.instagram.com/fakultasteknikupnvjt/">Instagram</a></li>
-                            <li class="contact-yt"><a href="#">Youtube</a></li>
-                        </ul>
-                    </nav>
+                    <div class="sidebar-news-title">
+                    <h2>Latest News</h2>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="images/sidebar/teknikmesin.jpg" class="img-size" alt="PBBFakultasTeknik">
+                        <h4>Jurusan Baru Prodi Teknik Mesin</h4>
+                        <p>UPN “Veteran” Jawa Timur (UPNVJT) sebagai perguruan tinggi negeri (PTN) di Surabaya yang berstatus Badan Layanan Umum (BLU) membuka program studi baru Teknik Mesin Tahun Akademik 2020/2021.</p>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="images/sidebar/AIRTF.jpg" class="img-size" alt="PBBFakultasTeknik">
+                        <h4>ASEAN-India Research Training Fellowship (AIRTF)</h4>
+
+                        <p>Skema ASEAN-India Research Training Fellowship (AIRTF) adalah program pendanaan unggulan yang dimulai oleh Departemen Sains & Teknologi (DST).</p>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="images/sidebar/labteknikindustrisim01.jpg" class="img-size" alt="PBBFakultasTeknik">
+                        <h4>Kegiatan Lab. Sistem Informasi Manajemen Teknik Industri </h4>
+
+                        <p>Mahasiswa konsentrasi mengikuti praktikum di lab. SIM Teknik Industri untuk menjawab kebutuhan stage holder di instansi swasta atau di instansi milik pemerintah.</p>
+                    </div>
+                    <div class="sidebar-news">
+                        <img src="images/sidebar/labstatertp02.jpg" class="img-size" alt="PBBFakultasTeknik">
+                        <h4>Kegiatan Lab. Teknologi Pangan Analisa dan Penghitungan TPC</h4>
+
+                        <p>Tujuan penelitian ini adalah untuk menganalisis total plate count mikroba pada makanan sehingga dapat dijadikan sebagai referensi tentang layak atau tidaknya mengkonsumsi sebagian produk makanan tersebut.</p>
+                    </div>
+                    
+                    <input type="submit" value="More News" />
+
                 </aside>
+            </div>
+        </div>
+
+        <div class="call-outs-container">
+            <div class="call-out">
+              <h5>DIgital Resource</h5>
+              <p>Siamik</p>
+              <p>Simaba</p>
+              <p>E-Learning</p>
+              <p>E-Journal</p>
+              <p>My Digilab</p>
+            </div>
+          
+            <div class="call-out">
+              <h5>Organization</h5>
+                <p>UPN Jawa Timur</p>
+                <p>BPM</p>
+                <p>LPPM</p>
+                <p>P3AI</p>
+                <p>BUU</p>
+                <p>BEM FT</p>
+            </div>
+          
+            <div class="call-out">
+            <h5>Fakultas Teknik UPN Jawa Timur</h5>
+                <span class="alamat-ft">
+                <p>Jl. Raya Rungkut Madya, Gunung Anyar, Surabaya</p>
+                <p>Jawa Timur 60294, Indonesia</p>
+                <p>Telp: (031) 8782179</p>
+                <p>Fax: (031) 8782257</p>
+                </span>
+                <nav class="contact-menu">
+                    <ul class="group">
+                        <li class="contact-fb"><a href="#">Facebook</a></li>
+                        <li class="contact-ig"><a href="https://www.instagram.com/fakultasteknikupnvjt/">Instagram</a></li>
+                        <li class="contact-yt"><a href="#">Youtube</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
